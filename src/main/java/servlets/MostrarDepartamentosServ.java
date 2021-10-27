@@ -17,11 +17,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import dao.DepartamentoDAO;
-import dao.EmpleadoDAO;
 import empresaHibernate.Departamento;
-import empresaHibernate.Empleado;
 import main.App;
-import menus.LibreriaMenu;
 import utils.HibernateUtil;
 
 /**
@@ -80,8 +77,7 @@ public class MostrarDepartamentosServ extends HttpServlet {
 			        out.println("<td align='center'> <b> Nombre </b> </td> ");
 			        out.println("<td align='center'> <b> Codigo Responsable </b> </td>  ");
 		        out.println(" </tr>");
-			
-			
+	
     		for(Departamento d : resultadodepartamento) {		
     			out.println("<tr>");
     			out.println("<td align='center'>"+ d.getCodigo() +"</td>");	

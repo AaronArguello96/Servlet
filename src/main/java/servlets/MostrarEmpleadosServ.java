@@ -16,12 +16,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import dao.DepartamentoDAO;
+
 import dao.EmpleadoDAO;
-import empresaHibernate.Departamento;
 import empresaHibernate.Empleado;
 import main.App;
-import menus.LibreriaMenu;
 import utils.HibernateUtil;
 
 /**
